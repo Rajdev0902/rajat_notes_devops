@@ -1,2 +1,9 @@
-variable "rg_names"  = {"RG_tfRajat0", "RG_tfRajat1", "RG_tfRajat2", "RG_tfRajat3"}
-location   = "eastus"
+variable "rg_name" {
+  description = RG_names
+  type        = string
+}
+
+variable "location" {
+  description = rg_locations
+  type        = "Default"
+}
