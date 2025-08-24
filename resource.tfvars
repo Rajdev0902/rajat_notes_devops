@@ -1,6 +1,6 @@
 variable "rg_name" {
   description = RG_names
-  type        = string
+  type        = "default"
 }
 
 variable "location" {
