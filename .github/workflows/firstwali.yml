@@ -1,24 +1,39 @@
 name: Rajatkaworkflow
+
 on:
   push:
     branches:
       - main
       - 'features/**'
+
 jobs:
   terraforminit:
     name: yegharkachiraghaijophleroshankarega
     runs-on: RAJATPC
+    steps:
+      - name: My first step
+        run: echo Jai Shree Ram
+      - name: My second step
+        run: echo Jai Shree Khatushyam
+
   terraformfmt:
     name: yeformatesahikarega
     runs-on: RAJATPC
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run terraform fmt ho gya hurray
+        run: terraform fmt -check
+
   terraformvalidate:
     name: yevalidatekrnewalahai
-    runs-on: RAJATPC  
-steps:
-  - name: My first step
-    run: Jai Shree Ram
-  - name: My second step
-    run: Jai Shree Khatushyam
+    runs-on: RAJATPC
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Terraform validated ho gya hurray
+        run: terraform validate
+
 
 
 
