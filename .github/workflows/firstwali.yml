@@ -29,10 +29,8 @@ jobs:
     name: Terraformvalidate
     runs-on: Firstaction
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Terraform validated ho gya hurray
-        run: terraform validate
+      - name: Terraform Init
+        run: terraform init
 
 
 
