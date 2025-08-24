@@ -1,0 +1,26 @@
+name: Rajatkaworkflow
+on:
+  push:
+    branches:
+      - main
+      - 'features/**'
+jobs:
+  terraforminit:
+    name: yegharkachiraghaijophleroshankarega
+    runs-on: RAJATPC
+  terraformfmt:
+    name: yeformatesahikarega
+    runs-on: RAJATPC
+  terraformvalidate:
+    name: yevalidatekrnewalahai
+    runs-on: RAJATPC  
+steps:
+  - name: My first step
+    run: Jai Shree Ram
+  - name: My second step
+    run: Jai Shree Khatushyam
+
+
+
+    
+    
