@@ -8,8 +8,8 @@ on:
 
 jobs:
   terraforminit:
-    name: yegharkachiraghaijophleroshankarega
-    runs-on: RAJATPC
+    name: Terraforminit
+    runs-on: Firstaction
     steps:
       - name: My first step
         run: echo Jai Shree Ram
@@ -17,8 +17,8 @@ jobs:
         run: echo Jai Shree Khatushyam
 
   terraformfmt:
-    name: yeformatesahikarega
-    runs-on: RAJATPC
+    name: Terraformfmt
+    runs-on: Firstaction
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,8 +26,8 @@ jobs:
         run: terraform fmt -check
 
   terraformvalidate:
-    name: yevalidatekrnewalahai
-    runs-on: RAJATPC
+    name: Terraformvalidate
+    runs-on: Firstaction
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
